@@ -1,0 +1,62 @@
+Coding Problems :
+
+    Find the Missing Number
+    Search an element in a sorted and rotated array
+    Median of two sorted arrays
+    Two elements whose sum is closest to zero
+    Find the smallest and second smallest element in an array
+    Maximum and minimum of an array using minimum number of comparisons
+    k largest(or smallest) elements in an array | added Min Heap method
+    Ceiling in a sorted array
+    Count number of occurrences (or frequency) in a sorted array
+    Find the repeating and the missing | Added 3 new methods
+    Find a Fixed Point in a given array
+    Find the maximum element in an array which is first increasing and then decreasing
+    Find a pair with the given difference
+    Find the k most frequent words from a file
+    Median of two sorted arrays of different sizes
+    Find a peak element
+    Given an array of of size n and a number k, find all elements that appear more than n/k times
+    Find the minimum element in a sorted and rotated array
+    Kth smallest element in a row-wise and column-wise sorted 2D array | Set 1
+    Find k closest elements to a given value
+    Search in an almost sorted array
+    A Problem in Many Binary Search Implementations
+    Find the first repeating element in an array of integers
+    Find common elements in three sorted arrays
+    Count 1’s in a sorted binary array
+    Given a sorted array and a number x, find the pair in array whose sum is closest to x
+    Find the closest pair from two sorted arrays
+    K’th Smallest/Largest Element in Unsorted Array | Set 1
+    K’th Smallest/Largest Element in Unsorted Array | Set 2 (Expected Linear Time)
+    K’th Smallest/Largest Element in Unsorted Array | Set 3 (Worst Case Linear Time)
+    Find position of an element in a sorted array of infinite numbers
+    Given a sorted and rotated array, find if there is a pair with a given sum
+    Find the largest pair sum in an unsorted array
+    Find the nearest smaller numbers on left side in an array
+    K’th largest element in a stream
+    Find a pair with maximum product in array of Integers
+    Find the element that appears once in a sorted array
+    Find the odd appearing element in O(Log n) time
+    Find the largest three elements in an array
+    Search an element in an array where difference between adjacent elements is 1
+    Find three closest elements from given three sorted arrays
+    Find the element before which all the elements are smaller than it, and after which all are greater
+    Binary Search for Rational Numbers without using floating point arithmetic
+    Floor in a Sorted Array
+    Third largest element in an array of distinct elements
+    Second minimum element using minimum comparisons
+    Queries for greater than and not less than
+    Efficient search in an array where difference between adjacent is 1
+    Print all possible sums of consecutive numbers with sum N
+    Minimum time required to produce m items
+    Make all array elements equal with minimum cost
+    Check if there exist two elements in an array whose sum is equal to the sum of rest of the array
+    Check if reversing a sub array make the array sorted
+    Find all triplets with zero sum
+    Search, insert and delete in an unsorted array
+    Search, insert and delete in a sorted array
+    Move all occurrences of an element to end in a linked list
+    Search in an array of strings where non-empty strings are sorted
+    Smallest Difference Triplet from Three arrays
+    Best First Search (Informed Search)
