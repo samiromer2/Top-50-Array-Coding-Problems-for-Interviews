@@ -1,0 +1,2016 @@
+       Unsupervised learning :
+    1. ML | Types of Learning – Unsupervised Learning
+       ML | Types of Learning – Part 2
+    • Difficulty Level : Medium
+    • Last Updated : 25 Jul, 2022
+    • Read
+    • Discuss
+Unsupervised Learning: 
+Or unsupervised machine learning analyzes and clusters unlabeled datasets using machine learning algorithms. These algorithms find hidden patterns and data without any human intervention, i.e., we don’t give output to our model. The training model has only input parameter values and discovers the groups or patterns on its own.  Data-set in Figure A is Mall data that contains information about its clients that subscribe to them. Once subscribed they are provided a membership card and the mall has complete information about the customer and his/her every purchase. Now using this data and unsupervised learning techniques, the mall can easily group clients based on the parameters we are feeding in. 
+
+
+
+The input to the unsupervised learning models is as follows: 
+
+
+    • Unstructured data: May contain noisy(meaningless) data, missing values, or unknown data
+    • Unlabeled data: Data only contains a value for input parameters, there is no targeted value(output). It is easy to collect as compared to the labeled one in the Supervised approach.
+
+Types of Unsupervised Learning are as follows: 
+    • Clustering: Broadly this technique is applied to group data based on different patterns, such as similarities or differences, our machine model finds. These algorithms are used to process raw, unclassified data objects into groups. For example, in the above figure, we have not given output parameter values, so this technique will be used to group clients based on the input parameters provided by our data.
+    • Association: This technique is a rule-based ML technique that finds out some very useful relations between parameters of a large data set. This technique is basically used for market basket analysis that helps to better understand the relationship between different products. For e.g. shopping stores use algorithms based on this technique to find out the relationship between the sale of one product w.r.t to another’s sales based on customer behavior. Like if a customer buys milk, then he may also buy bread, eggs, or butter. Once trained well, such models can be used to increase their sales by planning different offers.
+Some algorithms: K-Means Clustering
+    • DBSCAN – Density-Based Spatial Clustering of Applications with Noise
+    • BIRCH – Balanced Iterative Reducing and Clustering using Hierarchies
+    • Hierarchical Clustering
+Semi-supervised Learning:
+As the name suggests, its working lies between Supervised and Unsupervised techniques. We use these techniques when we are dealing with data that is a little bit labeled and the rest large portion of it is unlabeled. We can use the unsupervised techniques to predict labels and then feed these labels to supervised techniques. This technique is mostly applicable in the case of image data sets where usually all images are not labeled. 
+
+Reinforcement Learning: 
+In this technique, the model keeps on increasing its performance using Reward Feedback to learn the behavior or pattern. These algorithms are specific to a particular problem e.g. Google Self Driving car, AlphaGo where a bot competes with humans and even itself to get better and better performers in Go Game. Each time we feed in data, they learn and add the data to their knowledge which is training data. So, the more it learns the better it gets trained and hence experienced. 
+    • Agents observe input.
+    • An agent performs an action by making some decisions.
+    • After its performance, an agent receives a reward and accordingly reinforces and the model stores in state-action pair of information.
+    • Temporal Difference (TD)
+    • Q-Learning
+    • Deep Adversarial Networks
+GeeksforGeeks Courses
+Machine Learning Basic and Advanced – Self Paced Course
+You must have heard a lot about Machine Learning, right? Here’s a perfect way to get started with it. A beginner to the advanced level course curated by industry experts to help you learn important topics of machine learning like Clustering, Data Dimensionality, NLP, and much more. Then, why wait? Enroll now and become an industry-ready machine learning engineer today.
+       
+    2. Supervised and Unsupervised learning
+       Supervised and Unsupervised learning
+    • Difficulty Level : Easy
+    • Last Updated : 24 Aug, 2022
+    • Read
+    • Discuss
+Supervised learning
+Supervised learning, as the name indicates, has the presence of a supervisor as a teacher. Basically supervised learning is when we teach or train the machine using data that is well labelled. Which means some data is already tagged with the correct answer. After that, the machine is provided with a new set of examples(data) so that the supervised learning algorithm analyses the training data(set of training examples) and produces a correct outcome from labelled data.
+ 
+
+For instance, suppose you are given a basket filled with different kinds of fruits. Now the first step is to train the machine with all the different fruits one by one like this: 
+
+    • If the shape of the object is rounded and has a depression at the top, is red in color, then it will be labeled as –Apple.
+    • If the shape of the object is a long curving cylinder having Green-Yellow color, then it will be labeled as –Banana. 
+Now suppose after training the data, you have given a new separate fruit, say Banana from the basket, and asked to identify it. 
+ 
+
+Since the machine has already learned the things from previous data and this time has to use it wisely. It will first classify the fruit with its shape and color and would confirm the fruit name as BANANA and put it in the Banana category. Thus the machine learns the things from training data(basket containing fruits) and then applies the knowledge to test data(new fruit). 
+Supervised learning is classified into two categories of algorithms: 
+    • Classification: A classification problem is when the output variable is a category, such as “Red” or “blue” , “disease” or “no disease”.
+    • Regression: A regression problem is when the output variable is a real value, such as “dollars” or “weight”.
+Supervised learning deals with or learns with “labeled” data. This implies that some data is already tagged with the correct answer.
+Types:-
+    • Regression
+    • Logistic Regression
+    • Classification
+    • Naive Bayes Classifiers
+    • K-NN (k nearest neighbors)
+    • Decision Trees
+    • Support Vector Machine
+Advantages:-
+    • Supervised learning allows collecting data and produces data output from previous experiences.
+    • Helps to optimize performance criteria with the help of experience.
+    • Supervised machine learning helps to solve various types of real-world computation problems.
+Disadvantages:-
+    • Classifying big data can be challenging.
+    • Training for supervised learning needs a lot of computation time. So, it requires a lot of time.
+
+Steps
+ 
+Unsupervised learning
+Unsupervised learning is the training of a machine using information that is neither classified nor labeled and allowing the algorithm to act on that information without guidance. Here the task of the machine is to group unsorted information according to similarities, patterns, and differences without any prior training of data. 
+Unlike supervised learning, no teacher is provided that means no training will be given to the machine. Therefore the machine is restricted to find the hidden structure in unlabeled data by itself. 
+For instance, suppose it is given an image having both dogs and cats which it has never seen. 
+ 
+
+Thus the machine has no idea about the features of dogs and cats so we can’t categorize it as ‘dogs and cats ‘. But it can categorize them according to their similarities, patterns, and differences, i.e., we can easily categorize the above picture into two parts. The first may contain all pics having dogs in them and the second part may contain all pics having cats in them. Here you didn’t learn anything before, which means no training data or examples. 
+
+It allows the model to work on its own to discover patterns and information that was previously undetected. It mainly deals with unlabelled data.
+Unsupervised learning is classified into two categories of algorithms: 
+    • Clustering: A clustering problem is where you want to discover the inherent groupings in the data, such as grouping customers by purchasing behavior.
+    • Association: An association rule learning problem is where you want to discover rules that describe large portions of your data, such as people that buy X also tend to buy Y.
+Types of Unsupervised Learning:-
+Clustering
+    1. Exclusive (partitioning)
+    2. Agglomerative
+    3. Overlapping
+    4. Probabilistic
+Clustering Types:-
+    1. Hierarchical clustering
+    2. K-means clustering
+    3. Principal Component Analysis
+    4. Singular Value Decomposition
+    5. Independent Component Analysis
+Supervised vs. Unsupervised Machine Learning
+Parameters
+          Supervised machine learning
+            Unsupervised machine learning
+Input Data  
+Algorithms are trained using labeled data.
+Algorithms are used against data that is not labeled
+Computational Complexity 
+ Simpler method
+ Computationally complex
+Accuracy
+Highly accurate
+Less accurate 
+No. of classes
+No. of classes is known
+No. of classes is not known
+Data Analysis
+Uses offline analysis
+Uses real-time analysis of data
+Algorithms used
+Linear and Logistics regression, Random forest,
+Support Vector Machine, Neural Network, etc.
+K-Means clustering, Hierarchical clustering, 
+Apriori algorithm, etc.
+This article is contributed by Shubham Bansal. If you like GeeksforGeeks and would like to contribute, you can also write an article using write.geeksforgeeks.org or mail your article to contribute@geeksforgeeksorg. See your article appearing on the GeeksforGeeks main page and help other Geeks.
+ 
+       
+    3. Clustering in Machine Learning
+       Clustering in Machine Learning
+    • Difficulty Level : Easy
+    • Last Updated : 23 Aug, 2022
+    • Read
+    • Discuss
+Introduction to Clustering 
+It is basically a type of unsupervised learning method. An unsupervised learning method is a method in which we draw references from datasets consisting of input data without labeled responses. Generally, it is used as a process to find meaningful structure, explanatory underlying processes, generative features, and groupings inherent in a set of examples. 
+Clustering is the task of dividing the population or data points into a number of groups such that data points in the same groups are more similar to other data points in the same group and dissimilar to the data points in other groups. It is basically a collection of objects on the basis of similarity and dissimilarity between them. 
+For ex– The data points in the graph below clustered together can be classified into one single group. We can distinguish the clusters, and we can identify that there are 3 clusters in the below picture. 
+
+It is not necessary for clusters to be spherical. Such as : 
+
+DBSCAN: Density-based Spatial Clustering of Applications with Noise 
+These data points are clustered by using the basic concept that the data point lies within the given constraint from the cluster center. Various distance methods and techniques are used for the calculation of the outliers. 
+Why Clustering? 
+Clustering is very much important as it determines the intrinsic grouping among the unlabelled data present. There are no criteria for good clustering. It depends on the user, what is the criteria they may use which satisfy their need. For instance, we could be interested in finding representatives for homogeneous groups (data reduction), in finding “natural clusters” and describe their unknown properties (“natural” data types), in finding useful and suitable groupings (“useful” data classes) or in finding unusual data objects (outlier detection). This algorithm must make some assumptions that constitute the similarity of points and each assumption make different and equally valid clusters. 
+Clustering Methods : 
+    • Density-Based Methods: These methods consider the clusters as the dense region having some similarities and differences from the lower dense region of the space. These methods have good accuracy and the ability to merge two clusters. Example DBSCAN (Density-Based Spatial Clustering of Applications with Noise), OPTICS (Ordering Points to Identify Clustering Structure), etc.
+    • Hierarchical Based Methods: The clusters formed in this method form a tree-type structure based on the hierarchy. New clusters are formed using the previously formed one. It is divided into two category 
+        ? Agglomerative (bottom-up approach)
+        ? Divisive (top-down approach)
+examples CURE (Clustering Using Representatives), BIRCH (Balanced Iterative Reducing Clustering and using Hierarchies), etc.
+    • Partitioning Methods: These methods partition the objects into k clusters and each partition forms one cluster. This method is used to optimize an objective criterion similarity function such as when the distance is a major parameter example K-means, CLARANS (Clustering Large Applications based upon Randomized Search), etc.
+    • Grid-based Methods: In this method, the data space is formulated into a finite number of cells that form a grid-like structure. All the clustering operations done on these grids are fast and independent of the number of data objects example STING (Statistical Information Grid), wave cluster, CLIQUE (CLustering In Quest), etc.
+Clustering Algorithms : 
+K-means clustering algorithm – It is the simplest unsupervised learning algorithm that solves clustering problem.K-means algorithm partitions n observations into k clusters where each observation belongs to the cluster with the nearest mean serving as a prototype of the cluster. 
+
+Applications of Clustering in different fields  
+    • Marketing: It can be used to characterize & discover customer segments for marketing purposes.
+    • Biology: It can be used for classification among different species of plants and animals.
+    • Libraries: It is used in clustering different books on the basis of topics and information.
+    • Insurance: It is used to acknowledge the customers, their policies and identifying the frauds.
+City Planning: It is used to make groups of houses and to study their values based on their geographical locations and other factors present. 
+
+Earthquake studies: By learning the earthquake-affected areas we can determine the dangerous zones. 
+References : 
+Wiki 
+Hierarchical clustering 
+Ijarcs 
+matteucc 
+analyticsvidhya 
+knowm 
+       
+    4. Different Types of Clustering Algorithm
+       Different Types of Clustering Algorithm
+    • Difficulty Level : Hard
+    • Last Updated : 21 Sep, 2021
+    • Read
+    • Discuss
+The introduction to clustering is discussed in this article and is advised to be understood first. 
+The clustering Algorithms are of many types. The following overview will only list the most prominent examples of clustering algorithms, as there are possibly over 100 published clustering algorithms. Not all provide models for their clusters and can thus not easily be categorized. 
+
+Distribution based methods : 
+It is a clustering model in which we will fit the data on the probability that how it may belong to the same distribution. The grouping done may be normal or gaussian. Gaussian distribution is more prominent where we have a fixed number of distributions and all the upcoming data is fitted into it such that the distribution of data may get maximized. This result in grouping which is shown in the figure:- 
+
+
+
+This model works well on synthetic data and diversely sized clusters. But this model may have problems if the constraints are not used to limit the model’s complexity. Furthermore, Distribution-based clustering produces clusters that assume concisely defined mathematical models underlying the data, a rather strong assumption for some data distributions. 
+For Ex- The expectation-maximization algorithm which uses multivariate normal distributions is one of the popular examples of this algorithm. 
+Centroid based methods : 
+This is basically one of the iterative clustering algorithms in which the clusters are formed by the closeness of data points to the centroid of clusters. Here, the cluster center i.e. centroid is formed such that the distance of data points is minimum with the center. This problem is basically one of the NP-Hard problems and thus solutions are commonly approximated over a number of trials. 
+For Ex- K – means algorithm is one of the popular examples of this algorithm. 
+
+The biggest problem with this algorithm is that we need to specify K in advance. It also has problems in clustering density-based distributions. 
+Connectivity based methods : 
+The core idea of the connectivity-based model is similar to Centroid based model which is basically defining clusters on the basis of the closeness of data points. Here we work on a notion that the data points which are closer have similar behavior as compared to data points that are farther. 
+It is not a single partitioning of the data set, instead, it provides an extensive hierarchy of clusters that merge with each other at certain distances. Here the choice of distance function is subjective. These models are very easy to interpret but it lacks scalability. 
+
+For Ex- hierarchical algorithm and its variants. 
+Density Models : 
+In this clustering model, there will be searching of data space for areas of the varied density of data points in the data space. It isolates various density regions based on different densities present in the data space. 
+For Ex- DBSCAN and OPTICS. 
+
+Subspace clustering : 
+Subspace clustering is an unsupervised learning problem that aims at grouping data points into multiple clusters so that data points at a single cluster lie approximately on a low-dimensional linear subspace. Subspace clustering is an extension of feature selection just as with feature selection subspace clustering requires a search method and evaluation criteria but in addition subspace clustering limit the scope of evaluation criteria. The subspace clustering algorithm localizes the search for relevant dimensions and allows them to find the cluster that exists in multiple overlapping subspaces. Subspace clustering was originally purposed to solved very specific computer vision problems having a union of subspace structure in the data but it gains increasing attention in the statistic and machine learning community. People use this tool in social networks, movie recommendations, and biological datasets. Subspace clustering raises the concern of data privacy as many such applications involve dealing with sensitive information. Data points are assumed to be incoherent as it only protects the differential privacy of any feature of a user rather than the entire profile user of the database. 
+There are two branches of subspace clustering based on their search strategy. 
+    • Top-down algorithms find an initial clustering in the full set of dimensions and evaluate the subspace of each cluster.
+    • The bottom-up approach finds dense region in low dimensional space then combine to form clusters.
+References : 
+analyticsvidhya 
+knowm 
+       
+    5. K means Clustering – Introduction
+       K means Clustering – Introduction
+    • Difficulty Level : Medium
+    • Last Updated : 23 Aug, 2022
+    • Read
+    • Discuss
+We are given a data set of items, with certain features, and values for these features (like a vector). The task is to categorize those items into groups. To achieve this, we will use the kMeans algorithm; an unsupervised learning algorithm. ‘K’ in the name of the algorithm represents the number of groups/clusters we want to classify our items into.
+Overview
+(It will help if you think of items as points in an n-dimensional space).  The algorithm will categorize the items into k groups or clusters of similarity. To calculate that similarity, we will use the euclidean distance as measurement.
+The algorithm works as follows:  
+    1. First, we initialize k points, called means or cluster centroids, randomly.
+    2. We categorize each item to its closest mean and we update the mean’s coordinates, which are the averages of the items categorized in that cluster so far.
+    3. We repeat the process for a given number of iterations and at the end, we have our clusters.
+The “points” mentioned above are called means because they are the mean values of the items categorized in them. To initialize these means, we have a lot of options. An intuitive method is to initialize the means at random items in the data set. Another method is to initialize the means at random values between the boundaries of the data set (if for a feature x the items have values in [0,3], we will initialize the means with values for x at [0,3]).
+The above algorithm in pseudocode is as follows:  
+Initialize k means with random values
+
+--> For a given number of iterations:
+    
+    --> Iterate through items:
+    
+        --> Find the mean closest to the item by calculating 
+        the euclidean distance of the item with each of the means
+        
+        --> Assign item to mean
+        
+        --> Update mean by shifting it to the average of the items in that cluster
+Read Data: 
+We receive input as a text file (‘data.txt’). Each line represents an item, and it contains numerical values (one for each feature) split by commas. You can find a sample data set here.
+We will read the data from the file, saving it into a list. Each element of the list is another list containing the item values for the features. We do this with the following function: 
+
+def ReadData(fileName): 
+  
+    # Read the file, splitting by lines 
+    f = open(fileName, 'r'); 
+    lines = f.read().splitlines(); 
+    f.close(); 
+  
+    items = []; 
+  
+    for i in range(1, len(lines)): 
+        line = lines[i].split(','); 
+        itemFeatures = []; 
+  
+        for j in range(len(line)-1): 
+              
+            # Convert feature value to float
+            v = float(line[j]); 
+              
+            # Add feature value to dict 
+            itemFeatures.append(v); 
+  
+        items.append(itemFeatures); 
+  
+    shuffle(items); 
+  
+    return items; 
+
+Initialize Means
+We want to initialize each mean’s values in the range of the feature values of the items. For that, we need to find the min and max for each feature. We accomplish that with the following function:
+ 
+
+def FindColMinMax(items):
+    n = len(items[0]);
+    minima = [sys.maxint for i in range(n)];
+    maxima = [-sys.maxint -1 for i in range(n)];
+      
+    for item in items:
+        for f in range(len(item)):
+            if (item[f] < minima[f]):
+                minima[f] = item[f];
+              
+            if (item[f] > maxima[f]):
+                maxima[f] = item[f];
+  
+return minima,maxima;
+
+The variables minima, and maxima are lists containing the min and max values of the items respectively. We initialize each mean’s feature values randomly between the corresponding minimum and maximum in those above two lists:
+ 
+
+def InitializeMeans(items, k, cMin, cMax):
+  
+    # Initialize means to random numbers between
+    # the min and max of each column/feature    
+    f = len(items[0]); # number of features
+    means = [[0 for i in range(f)] for j in range(k)];
+      
+    for mean in means:
+        for i in range(len(mean)):
+  
+            # Set value to a random float
+            # (adding +-1 to avoid a wide placement of a mean)
+            mean[i] = uniform(cMin[i]+1, cMax[i]-1);
+  
+    return means;
+
+
+Euclidean Distance
+We will be using the euclidean distance as a metric of similarity for our data set (note: depending on your items, you can use another similarity metric).
+ 
+
+def EuclideanDistance(x, y): 
+    S = 0; # The sum of the squared differences of the elements 
+    for i in range(len(x)): 
+        S += math.pow(x[i]-y[i], 2)
+  
+    #The square root of the sum
+    return math.sqrt(S)
+
+Update Means
+To update a mean, we need to find the average value for its feature, for all the items in the mean/cluster. We can do this by adding all the values and then dividing by the number of items, or we can use a more elegant solution. We will calculate the new average without having to re-add all the values, by doing the following: 
+ 
+m = (m*(n-1)+x)/n
+where m is the mean value for a feature, n is the number of items in the cluster, and x is the feature value for the added item. We do the above for each feature to get the new mean.
+ 
+
+def UpdateMean(n,mean,item):
+    for i in range(len(mean)):
+        m = mean[i];
+        m = (m*(n-1)+item[i])/float(n);
+        mean[i] = round(m, 3);
+      
+    return mean;
+
+Classify Items
+Now we need to write a function to classify an item into a group/cluster. For the given item, we will find its similarity to each mean, and we will classify the item to the closest one.
+ 
+
+def Classify(means,item):
+  
+    # Classify item to the mean with minimum distance    
+    minimum = sys.maxint;
+    index = -1;
+  
+    for i in range(len(means)):
+  
+        # Find distance from item to mean
+        dis = EuclideanDistance(item, means[i]);
+  
+        if (dis < minimum):
+            minimum = dis;
+            index = i;
+      
+    return index;
+
+Find Means
+To actually find the means, we will loop through all the items, classify them to their nearest cluster and update the cluster’s mean. We will repeat the process for a fixed number of iterations. If between two iterations no item changes classification, we stop the process as the algorithm has found the optimal solution.
+The below function takes as input k (the number of desired clusters), the items, and the number of maximum iterations, and returns the means and the clusters. The classification of an item is stored in the array belongsTo and the number of items in a cluster is stored in clusterSizes.
+ 
+
+def CalculateMeans(k,items,maxIterations=100000):
+  
+    # Find the minima and maxima for columns
+    cMin, cMax = FindColMinMax(items);
+      
+    # Initialize means at random points
+    means = InitializeMeans(items,k,cMin,cMax);
+      
+    # Initialize clusters, the array to hold
+    # the number of items in a class
+    clusterSizes= [0 for i in range(len(means))];
+  
+    # An array to hold the cluster an item is in
+    belongsTo = [0 for i in range(len(items))];
+  
+    # Calculate means
+    for e in range(maxIterations):
+  
+        # If no change of cluster occurs, halt
+        noChange = True;
+        for i in range(len(items)):
+  
+            item = items[i];
+  
+            # Classify item into a cluster and update the
+            # corresponding means.        
+            index = Classify(means,item);
+  
+            clusterSizes[index] += 1;
+            cSize = clusterSizes[index];
+            means[index] = UpdateMean(cSize,means[index],item);
+  
+            # Item changed cluster
+            if(index != belongsTo[i]):
+                noChange = False;
+  
+            belongsTo[i] = index;
+  
+        # Nothing changed, return
+        if (noChange):
+            break;
+  
+    return means;
+
+Find Clusters
+Finally, we want to find the clusters, given the means. We will iterate through all the items and we will classify each item to its closest cluster.
+ 
+
+def FindClusters(means,items):
+    clusters = [[] for i in range(len(means))]; # Init clusters
+      
+    for item in items:
+  
+        # Classify item into a cluster
+        index = Classify(means,item);
+  
+        # Add item to cluster
+        clusters[index].append(item);
+  
+    return clusters;
+
+The other popularly used similarity measures are:-
+1. Cosine distance: It determines the cosine of the angle between the point vectors of the two points in the n-dimensional space
+
+2. Manhattan distance: It computes the sum of the absolute differences between the coordinates of the two data points.
+
+3. Minkowski distance: It is also known as the generalized distance metric. It can be used for both ordinal and quantitative variables
+
+You can find the entire code on my GitHub, along with a sample data set and a plotting function. Thanks for reading.
+This article is contributed by Antonis Maronikolakis. If you like GeeksforGeeks and would like to contribute, you can also write an article using write.geeksforgeeks.org or mail your article to review-team@geeksforgeeks.org. See your article appearing on the GeeksforGeeks main page and help other Geeks.
+Please write comments if you find anything incorrect, or if you want to share more information about the topic discussed above.
+ 
+       
+    6. Elbow Method for optimal value of k in Kmeans
+       Elbow Method for optimal value of k in KMeans
+    • Difficulty Level : Basic
+    • Last Updated : 22 Aug, 2022
+    • Read
+    • Discuss
+Prerequisites: K-Means Clustering
+A fundamental step for any unsupervised algorithm is to determine the optimal number of clusters into which the data may be clustered. The Elbow Method is one of the most popular methods to determine this optimal value of k.
+We now demonstrate the given method using the K-Means clustering technique using the Sklearn library of python.
+Step 1: Importing the required libraries
+
+from sklearn.cluster import KMeans
+from sklearn import metrics
+from scipy.spatial.distance import cdist
+import numpy as np
+import matplotlib.pyplot as plt
+
+Step 2: Creating and Visualizing the data
+
+# Creating the data
+x1 = np.array([3, 1, 1, 2, 1, 6, 6, 6, 5, 6, 7, 8, 9, 8, 9, 9, 8])
+x2 = np.array([5, 4, 5, 6, 5, 8, 6, 7, 6, 7, 1, 2, 1, 2, 3, 2, 3])
+X = np.array(list(zip(x1, x2))).reshape(len(x1), 2)
+  
+# Visualizing the data
+plt.plot()
+plt.xlim([0, 10])
+plt.ylim([0, 10])
+plt.title('Dataset')
+plt.scatter(x1, x2)
+plt.show()
+
+
+From the above visualization, we can see that the optimal number of clusters should be around 3. But visualizing the data alone cannot always give the right answer. Hence we demonstrate the following steps.
+We now define the following:-
+    1. Distortion: It is calculated as the average of the squared distances from the cluster centers of the respective clusters. Typically, the Euclidean distance metric is used.
+    2. Inertia: It is the sum of squared distances of samples to their closest cluster center.
+
+We iterate the values of k from 1 to 9 and calculate the values of distortions for each value of k and calculate the distortion and inertia for each value of k in the given range.
+Step 3: Building the clustering model and calculating the values of the Distortion and Inertia:
+
+distortions = []
+inertias = []
+mapping1 = {}
+mapping2 = {}
+K = range(1, 10)
+  
+for k in K:
+    # Building and fitting the model
+    kmeanModel = KMeans(n_clusters=k).fit(X)
+    kmeanModel.fit(X)
+  
+    distortions.append(sum(np.min(cdist(X, kmeanModel.cluster_centers_,
+                                        'euclidean'), axis=1)) / X.shape[0])
+    inertias.append(kmeanModel.inertia_)
+  
+    mapping1[k] = sum(np.min(cdist(X, kmeanModel.cluster_centers_,
+                                   'euclidean'), axis=1)) / X.shape[0]
+    mapping2[k] = kmeanModel.inertia_
+
+Step 4: Tabulating and Visualizing the results
+a) Using the different values of Distortion:
+
+for key, val in mapping1.items():
+    print(f'{key} : {val}')
+
+
+
+plt.plot(K, distortions, 'bx-')
+plt.xlabel('Values of K')
+plt.ylabel('Distortion')
+plt.title('The Elbow Method using Distortion')
+plt.show()
+
+
+b) Using the different values of Inertia:
+
+for key, val in mapping2.items():
+    print(f'{key} : {val}')
+
+
+
+plt.plot(K, inertias, 'bx-')
+plt.xlabel('Values of K')
+plt.ylabel('Inertia')
+plt.title('The Elbow Method using Inertia')
+plt.show()
+
+
+To determine the optimal number of clusters, we have to select the value of k at the “elbow” ie the point after which the distortion/inertia start decreasing in a linear fashion. Thus for the given data, we conclude that the optimal number of clusters for the data is 3.
+The clustered data points for different value of k:-
+1. k = 1
+ 
+
+2. k = 2
+ 
+
+3. k = 3
+ 
+
+4. k = 4
+ 
+
+       
+    7. Random Initialization Trap in K-Means
+       ML | Random Initialization Trap in K-Means
+    • Difficulty Level : Easy
+    • Last Updated : 08 Jun, 2021
+    • Read
+    • Discuss
+Random initialization trap is a problem that occurs in the K-means algorithm. In random initialization trap when the centroids of the clusters to be generated are explicitly defined by the User then inconsistency may be created and this may sometimes lead to generating wrong clusters in the dataset. So random initialization trap may sometimes prevent us from developing the correct clusters. 
+Example : 
+Suppose you have a dataset with the following points shown in the picture and you want to generate three clusters in this dataset according to their attributes by performing K-means clustering. From the figure, we can get the intuition what are the clusters that are required to be generated. K-means will perform clustering on the basis of the centroids fed into the algorithm and generate the required clusters according to these centroids. 
+
+ 
+
+
+
+First Trial 
+Suppose we choose 3 sets of centroids according to the figure shown below. The clusters that are generated corresponding to these centroids are shown in the figure below. 
+ 
+
+Final Model 
+ 
+
+Second Trial 
+Consider another case in which we choose another set of centroids for the dataset as shown. Now the set of clusters generated will be different from the clusters generated in the previous practice. 
+ 
+
+Final model 
+ 
+
+Similarly we may get different model outputs on the same dataset. This condition where a different set of clusters is generated when a different set of centroids are provided to the K-means algorithm making it inconsistent and unreliable is called the Random initialization trap.
+       
+    8. ML | K-means++ Algorithm
+       ML | K-means++ Algorithm
+    • Difficulty Level : Easy
+    • Last Updated : 13 Jul, 2021
+    • Read
+    • Discuss
+Prerequisite: K-means Clustering – Introduction
+ 
+Drawback of standard K-means algorithm:
+One disadvantage of the K-means algorithm is that it is sensitive to the initialization of the centroids or the mean points. So, if a centroid is initialized to be a “far-off” point, it might just end up with no points associated with it, and at the same time, more than one cluster might end up linked with a single centroid. Similarly, more than one centroids might be initialized into the same cluster resulting in poor clustering. For example, consider the images shown below. 
+A poor initialization of centroids resulted in poor clustering. 
+ 
+
+
+This is how the clustering should have been: 
+ 
+
+
+
+ 
+K-mean++:
+To overcome the above-mentioned drawback we use K-means++. This algorithm ensures a smarter initialization of the centroids and improves the quality of the clustering. Apart from initialization, the rest of the algorithm is the same as the standard K-means algorithm. That is K-means++ is the standard K-means algorithm coupled with a smarter initialization of the centroids.
+ 
+Initialization algorithm:
+The steps involved are: 
+ 
+    1. Randomly select the first centroid from the data points.
+    2. For each data point compute its distance from the nearest, previously chosen centroid.
+    3. Select the next centroid from the data points such that the probability of choosing a point as centroid is directly proportional to its distance from the nearest, previously chosen centroid. (i.e. the point having maximum distance from the nearest centroid is most likely to be selected next as a centroid)
+    4. Repeat steps 2 and 3 until k centroids have been sampled
+ 
+Intuition:
+By following the above procedure for initialization, we pick up centroids that are far away from one another. This increases the chances of initially picking up centroids that lie in different clusters. Also, since centroids are picked up from the data points, each centroid has some data points associated with it at the end.
+ 
+Implementation:
+Consider a data-set having the following distribution:
+ 
+
+Code : Python code for KMean++ Algorithm 
+ 
+
+# importing dependencies
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import sys
+  
+# creating data
+mean_01 = np.array([0.0, 0.0])
+cov_01 = np.array([[1, 0.3], [0.3, 1]])
+dist_01 = np.random.multivariate_normal(mean_01, cov_01, 100)
+  
+mean_02 = np.array([6.0, 7.0])
+cov_02 = np.array([[1.5, 0.3], [0.3, 1]])
+dist_02 = np.random.multivariate_normal(mean_02, cov_02, 100)
+  
+mean_03 = np.array([7.0, -5.0])
+cov_03 = np.array([[1.2, 0.5], [0.5, 1,3]])
+dist_03 = np.random.multivariate_normal(mean_03, cov_01, 100)
+  
+mean_04 = np.array([2.0, -7.0])
+cov_04 = np.array([[1.2, 0.5], [0.5, 1,3]])
+dist_04 = np.random.multivariate_normal(mean_04, cov_01, 100)
+  
+data = np.vstack((dist_01, dist_02, dist_03, dist_04))
+np.random.shuffle(data)
+  
+# function to plot the selected centroids
+def plot(data, centroids):
+    plt.scatter(data[:, 0], data[:, 1], marker = '.',
+                color = 'gray', label = 'data points')
+    plt.scatter(centroids[:-1, 0], centroids[:-1, 1],
+                color = 'black', label = 'previously selected centroids')
+    plt.scatter(centroids[-1, 0], centroids[-1, 1],
+                color = 'red', label = 'next centroid')
+    plt.title('Select % d th centroid'%(centroids.shape[0]))
+     
+    plt.legend()
+    plt.xlim(-5, 12)
+    plt.ylim(-10, 15)
+    plt.show()
+          
+# function to compute euclidean distance
+def distance(p1, p2):
+    return np.sum((p1 - p2)**2)
+  
+# initialization algorithm
+def initialize(data, k):
+    '''
+    initialized the centroids for K-means++
+    inputs:
+        data - numpy array of data points having shape (200, 2)
+        k - number of clusters
+    '''
+    ## initialize the centroids list and add
+    ## a randomly selected data point to the list
+    centroids = []
+    centroids.append(data[np.random.randint(
+            data.shape[0]), :])
+    plot(data, np.array(centroids))
+  
+    ## compute remaining k - 1 centroids
+    for c_id in range(k - 1):
+         
+        ## initialize a list to store distances of data
+        ## points from nearest centroid
+        dist = []
+        for i in range(data.shape[0]):
+            point = data[i, :]
+            d = sys.maxsize
+             
+            ## compute distance of 'point' from each of the previously
+            ## selected centroid and store the minimum distance
+            for j in range(len(centroids)):
+                temp_dist = distance(point, centroids[j])
+                d = min(d, temp_dist)
+            dist.append(d)
+             
+        ## select data point with maximum distance as our next centroid
+        dist = np.array(dist)
+        next_centroid = data[np.argmax(dist), :]
+        centroids.append(next_centroid)
+        dist = []
+        plot(data, np.array(centroids))
+    return centroids
+  
+# call the initialize function to get the centroids
+centroids = initialize(data, k = 4)
+
+Output: 
+ 
+
+Note: Although the initialization in K-means++ is computationally more expensive than the standard K-means algorithm, the run-time for convergence to optimum is drastically reduced for K-means++. This is because the centroids that are initially chosen are likely to lie in different clusters already.
+       
+    9. Analysis of test data using K-Means Clustering in Python
+       Analysis of test data using K-Means Clustering in Python
+    • Difficulty Level : Easy
+    • Last Updated : 09 Feb, 2018
+    • Read
+    • Discuss
+This article demonstrates an illustration of K-means clustering on a sample random data using open-cv library.
+Pre-requisites: Numpy, OpenCV, matplot-lib
+Let’s first visualize test data with Multiple Features using matplot-lib tool.
+
+# importing required tools
+import numpy as np
+from matplotlib import pyplot as plt
+  
+# creating two test data
+X = np.random.randint(10,35,(25,2))
+Y = np.random.randint(55,70,(25,2))
+Z = np.vstack((X,Y))
+Z = Z.reshape((50,2))
+  
+# convert to np.float32
+Z = np.float32(Z)
+  
+plt.xlabel('Test Data')
+plt.ylabel('Z samples')
+  
+plt.hist(Z,256,[0,256])
+  
+plt.show()
+
+Here ‘Z’ is an array of size 100, and values ranging from 0 to 255. Now, reshaped ‘z’ to a column vector. It will be more useful when more than one features are present. Then change the data to np.float32 type.
+Output:
+
+
+
+Now, apply the k-Means clustering algorithm to the same example as in the above test data and see its behavior.
+Steps Involved:
+1) First we need to set a test data.
+2) Define criteria and apply kmeans().
+3) Now separate the data.
+4) Finally Plot the data.
+import numpy as np
+import cv2
+from matplotlib import pyplot as plt
+  
+X = np.random.randint(10,45,(25,2))
+Y = np.random.randint(55,70,(25,2))
+Z = np.vstack((X,Y))
+  
+# convert to np.float32
+Z = np.float32(Z)
+  
+# define criteria and apply kmeans()
+criteria = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 10, 1.0)
+ret,label,center = cv2.kmeans(Z,2,None,criteria,10,cv2.KMEANS_RANDOM_CENTERS)
+  
+# Now separate the data
+A = Z[label.ravel()==0]
+B = Z[label.ravel()==1]
+  
+# Plot the data
+plt.scatter(A[:,0],A[:,1])
+plt.scatter(B[:,0],B[:,1],c = 'r')
+plt.scatter(center[:,0],center[:,1],s = 80,c = 'y', marker = 's')
+plt.xlabel('Test Data'),plt.ylabel('Z samples')
+plt.show()
+
+Output:
+
+This example is meant to illustrate where k-means will produce intuitively possible clusters.
+
+Applications:
+1) Identifying Cancerous Data.
+2) Prediction of Students’ Academic Performance.
+3) Drug Activity Prediction.
+       
+    10. Mini Batch K-means clustering algorithm
+       ML | Mini Batch K-means clustering algorithm
+    • Difficulty Level : Medium
+    • Last Updated : 13 May, 2019
+    • Read
+    • Discuss
+Prerequisite: Optimal value of K in K-Means Clustering
+K-means is one of the most popular clustering algorithms, mainly because of its good time performance. With the increasing size of the datasets being analyzed, the computation time of K-means increases because of its constraint of needing the whole dataset in main memory. For this reason, several methods have been proposed to reduce the temporal and spatial cost of the algorithm. A different approach is the Mini batch K-means algorithm.
+
+Mini Batch K-means algorithm‘s main idea is to use small random batches of data of a fixed size, so they can be stored in memory. Each iteration a new random sample from the dataset is obtained and used to update the clusters and this is repeated until convergence. Each mini batch updates the clusters using a convex combination of the values of the prototypes and the data, applying a learning rate that decreases with the number of iterations. This learning rate is the inverse of the number of data assigned to a cluster during the process. As the number of iterations increases, the effect of new data is reduced, so convergence can be detected when no changes in the clusters occur in several consecutive iterations.
+The empirical results suggest that it can obtain a substantial saving of computational time at the expense of some loss of cluster quality, but not extensive study of the algorithm has been done to measure how the characteristics of the datasets, such as the number of clusters or its size, affect the partition quality.
+
+The algorithm takes small randomly chosen batches of the dataset for each iteration. Each data in the batch is assigned to the clusters, depending on the previous locations of the cluster centroids. It then updates the locations of cluster centroids based on the new points from the batch. The update is a gradient descent update, which is significantly faster than a normal Batch K-Means update.
+
+
+Below is the algorithm for Mini batch K-means –
+Given a dataset D = {d1, d2, d3, .....dn},
+                       no. of iterations t,
+                       batch size b, 
+                       no. of clusters k.
+
+k clusters C = {c1, c2, c3, ......ck}
+
+initialize k cluster centers O = {o1, o2, .......ok}
+# _initialize each cluster
+Ci = ? (1=< i =< k)
+# _initialize no. of data in each cluster
+Nci = 0 (1=< i =< k)
+
+for j=1 to t do:
+    # M is the batch dataset and xm
+    # is the sample randomly chosen from D
+    M = {xm | 1 =< m =< b}
+
+    # catch cluster center for each
+    # sample in the batch data set
+    for m=1 to b do:
+        oi(xm) = sum(xm)/|c|i (xm ? M and xm ? ci)
+    end for
+    # update the cluster center with each batch set
+
+     for m=1 to b do:
+        # get the cluster center for xm
+        oi = oi(xm)
+        # update number of data for each cluster center
+        Nci = Nci + 1
+        #calculate learning rate for each cluster center
+        lr=1/Nci
+        # take gradient step to update cluster center
+        oi = (1-lr)oi + lr*xm
+     end for
+end for
+ 
+Python implementation of the above algorithm using scikit-learn library:
+from sklearn.cluster import MiniBatchKMeans, KMeans
+from sklearn.metrics.pairwise import pairwise_distances_argmin
+from sklearn.datasets.samples_generator import make_blobs
+  
+# Load data in X 
+batch_size = 45
+centers = [[1, 1], [-2, -1], [1, -2], [1, 9]]
+n_clusters = len(centers)
+X, labels_true = make_blobs(n_samples = 3000,
+                            centers = centers,
+                            cluster_std = 0.9)
+  
+# perform the mini batch K-means
+mbk = MiniBatchKMeans(init ='k-means++', n_clusters = 4,
+                      batch_size = batch_size, n_init = 10,
+                      max_no_improvement = 10, verbose = 0)
+  
+mbk.fit(X)
+mbk_means_cluster_centers = np.sort(mbk.cluster_centers_, axis = 0)
+mbk_means_labels = pairwise_distances_argmin(X, mbk_means_cluster_centers)
+  
+# print the labels of each data
+print(mbk_means_labels)
+
+The mini batch K-means is faster but gives slightly different results than the normal batch K-means.
+Here we cluster a set of data, first with K-means and then with mini batch K-means, and plot the results. We will also plot the points that are labeled differently between the two algorithms.
+
+As the number clusters and the number of data increases, the relative saving in computational time also increases. The saving in computational time is more noticeable only when the number of clusters is very large. The effect of the batch size in the computational time is also more evident when the number of clusters is larger. It can be concluded that, increasing the number of clusters, decreases the similarity of the mini batch K-means solution to the K-means solution. Despite that the agreement between the partitions decreases as the number of clusters increases, the objective function does not degrade at the same rate. It means that the final partitions are different, but closer in quality.
+ 
+References:
+https://upcommons.upc.edu/bitstream/handle/2117/23414/R13-8.pdf
+https://scikit-learn.org/stable/modules/generated/sklearn.cluster.MiniBatchKMeans.html
+       
+    11. Mean-Shift Clustering
+ML | Mean-Shift Clustering
+    • Difficulty Level : Expert
+    • Last Updated : 24 Feb, 2022
+    • Read
+    • Discuss
+Meanshift is falling under the category of a clustering algorithm in contrast of Unsupervised learning that assigns the data points to the clusters iteratively by shifting points towards the mode (mode is the highest density of data points in the region, in the context of the Meanshift). As such, it is also known as the Mode-seeking algorithm. Mean-shift algorithm has applications in the field of image processing and computer vision.
+Given a set of data points, the algorithm iteratively assigns each data point towards the closest cluster centroid and direction to the closest cluster centroid is determined by where most of the points nearby are at. So each iteration each data point will move closer to where the most points are at, which is or will lead to the cluster center. When the algorithm stops, each point is assigned to a cluster.
+
+Unlike the popular K-Means cluster algorithm, mean-shift does not require specifying the number of clusters in advance. The number of clusters is determined by the algorithm with respect to the data.
+Note: The downside to Mean Shift is that it is computationally expensive O(n²).
+
+
+Kernel Density Estimation –
+The first step when applying mean shift clustering algorithms is representing your data in a mathematical manner this means representing your data as points such as the set below.
+
+Mean-shift builds upon the concept of kernel density estimation, in short KDE. Imagine that the above data was sampled from a probability distribution. KDE is a method to estimate the underlying distribution also called the probability density function for a set of data.
+It works by placing a kernel on each point in the data set. A kernel is a fancy mathematical word for a weighting function generally used in convolution. There are many different types of kernels, but the most popular one is the Gaussian kernel. Adding up all of the individual kernels generates a probability surface example density function. Depending on the kernel bandwidth parameter used, the resultant density function will vary.
+Below is the KDE surface for our points above using a Gaussian kernel with a kernel bandwidth of 2.
+Surface plot:
+
+Contour plot:
+
+Below is the Python implementation :
+
+
+import numpy as np
+import pandas as pd
+from sklearn.cluster import MeanShift
+from sklearn.datasets.samples_generator import make_blobs
+from matplotlib import pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+   
+# We will be using the make_blobs method
+# in order to generate our own data.
+  
+clusters = [[2, 2, 2], [7, 7, 7], [5, 13, 13]]
+  
+X, _ = make_blobs(n_samples = 150, centers = clusters,
+                                   cluster_std = 0.60)
+   
+# After training the model, We store the
+# coordinates for the cluster centers
+ms = MeanShift()
+ms.fit(X)
+cluster_centers = ms.cluster_centers_
+   
+# Finally We plot the data points
+# and centroids in a 3D graph.
+fig = plt.figure()
+  
+ax = fig.add_subplot(111, projection ='3d')
+  
+ax.scatter(X[:, 0], X[:, 1], X[:, 2], marker ='o')
+  
+ax.scatter(cluster_centers[:, 0], cluster_centers[:, 1],
+           cluster_centers[:, 2], marker ='x', color ='red',
+           s = 300, linewidth = 5, zorder = 10)
+  
+plt.show()
+
+Try Code here
+Output:
+
+To illustrate, suppose we are given a data set {ui} of points in d-dimensional space, sampled from some larger population, and that we have chosen a kernel K having bandwidth parameter h. Together, these data and kernel function returns the following kernel density estimator for the full population’s density function.
+
+The kernel function here is required to satisfy the following two conditions:
+
+-> The first requirement is needed to ensure that our estimate is normalized.
+-> The second is associated with the symmetry of our space.
+ 
+Two popular kernel functions that satisfy these conditions are given by-
+
+Below we plot an example in one dimension using the Gaussian kernel to estimate the density of some population along the x-axis. We can see that each sample point adds a small Gaussian to our estimate, centered about it and equations above may look a bit intimidating, but the graphic here should clarify that the concept is pretty straightforward.
+
+Iterative Mode Search –
+1. Initialize random seed and window W.
+2. Calculate the center of gravity (mean) of W.    
+3. Shift the search window to the mean.    
+4. Repeat Step 2 until convergence.
+
+General algorithm outline –
+for p in copied_points:
+    while not at_kde_peak:
+        p = shift(p, original_points)
+
+Shift function looks like this –
+def shift(p, original_points):
+    shift_x = float(0)
+    shift_y = float(0)
+    scale_factor = float(0)
+  
+    for p_temp in original_points:
+        # numerator
+        dist = euclidean_dist(p, p_temp)
+        weight = kernel(dist, kernel_bandwidth)
+        shift_x += p_temp[0] * weight
+        shift_y += p_temp[1] * weight
+        # denominator
+        scale_factor += weight
+  
+    shift_x = shift_x / scale_factor
+    shift_y = shift_y / scale_factor
+    return [shift_x, shift_y]
+
+Pros:
+    • Finds variable number of modes
+    • Robust to outliers
+    • General, application-independent tool
+    • Model-free, doesn’t assume any prior shape like spherical, elliptical, etc. on data clusters
+    • Just a single parameter (window size h) where h has a physical meaning (unlike k-means)
+Cons:
+    • Output depends on window size
+    • Window size (bandwidth) selecHon is not trivial
+    • Computationally (relatively) expensive (approx 2s/image)
+    • Doesn’t scale well with dimension of feature space.
+
+    12. DBSCAN – Density based clustering
+       DBSCAN Clustering in ML | Density based clustering
+    • Difficulty Level : Medium
+    • Last Updated : 24 Aug, 2022
+    • Read
+    • Discuss
+Clustering analysis or simply Clustering is basically an Unsupervised learning method that divides the data points into a number of specific batches or groups, such that the data points in the same groups have similar properties and data points in different groups have different properties in some sense. It comprises many different methods based on differential evolution. 
+E.g. K-Means (distance between points), Affinity propagation (graph distance), Mean-shift (distance between points), DBSCAN (distance between nearest points), Gaussian mixtures (Mahalanobis distance to centers), Spectral clustering (graph distance) etc.
+Fundamentally, all clustering methods use the same approach i.e. first we calculate similarities and then we use it to cluster the data points into groups or batches. Here we will focus on Density-based spatial clustering of applications with noise (DBSCAN) clustering method. 
+Clusters are dense regions in the data space, separated by regions of the lower density of points. The DBSCAN algorithm is based on this intuitive notion of “clusters” and “noise”. The key idea is that for each point of a cluster, the neighborhood of a given radius has to contain at least a minimum number of points. 
+
+Why DBSCAN? 
+Partitioning methods (K-means, PAM clustering) and hierarchical clustering work for finding spherical-shaped clusters or convex clusters. In other words, they are suitable only for compact and well-separated clusters. Moreover, they are also severely affected by the presence of noise and outliers in the data.
+Real life data may contain irregularities, like:
+    1. Clusters can be of arbitrary shape such as those shown in the figure below. 
+    2. Data may contain noise. 
+ 
+
+The figure below shows a data set containing nonconvex clusters and outliers/noises. Given such data, k-means algorithm has difficulties in identifying these clusters with arbitrary shapes.
+DBSCAN algorithm requires two parameters:
+    1. eps : It defines the neighborhood around a data point i.e. if the distance between two points is lower or equal to ‘eps’ then they are considered neighbors. If the eps value is chosen too small then large part of the data will be considered as outliers. If it is chosen very large then the clusters will merge and the majority of the data points will be in the same clusters. One way to find the eps value is based on the k-distance graph.
+    2. MinPts: Minimum number of neighbors (data points) within eps radius. Larger the dataset, the larger value of MinPts must be chosen. As a general rule, the minimum MinPts can be derived from the number of dimensions D in the dataset as, MinPts >= D+1. The minimum value of MinPts must be chosen at least 3.
+ 
+In this algorithm, we have 3 types of data points.
+Core Point: A point is a core point if it has more than MinPts points within eps. 
+Border Point: A point which has fewer than MinPts within eps but it is in the neighborhood of a core point. 
+Noise or outlier: A point which is not a core point or border point.
+
+
+DBSCAN algorithm can be abstracted in the following steps:
+    1. Find all the neighbor points within eps and identify the core points or visited with more than MinPts neighbors.
+    2. For each core point if it is not already assigned to a cluster, create a new cluster.
+    3. Find recursively all its density connected points and assign them to the same cluster as the core point. 
+A point a and b are said to be density connected if there exist a point c which has a sufficient number of points in its neighbors and both the points a and b are within the eps distance. This is a chaining process. So, if b is neighbor of c, c is neighbor of d, d is neighbor of e, which in turn is neighbor of a implies that b is neighbor of a.
+    4. Iterate through the remaining unvisited points in the dataset. Those points that do not belong to any cluster are noise.
+Below is the DBSCAN clustering algorithm in pseudocode: 
+DBSCAN(dataset, eps, MinPts){
+# cluster index
+C = 1
+for each unvisited point p in dataset {
+         mark p as visited
+         # find neighbors
+         Neighbors N = find the neighboring points of p
+
+         if |N|>=MinPts:
+             N = N U N'
+             if p' is not a member of any cluster:
+                 add p' to cluster C 
+}
+Implementation of the above algorithm in Python :
+Here, we’ll use the Python library sklearn to compute DBSCAN. We’ll also use the matplotlib.pyplot library for visualizing clusters. The dataset used can be found here.
+Evaluation Metrics
+Moreover, we will use the Silhouette score and Adjusted rand score for evaluating clustering algorithms. 
+Silhouette score is in the range of -1 to 1. A score near 1 denotes the best meaning that the data point i is very compact within the cluster to which it belongs and far away from the other clusters. The worst value is -1. Values near 0 denote overlapping clusters.
+Absolute Rand Score is in the range of 0 to 1. More than 0.9 denotes excellent cluster recovery, above 0.8 is a good recovery. Less than 0.5 is considered to be poor recovery. 
+Example
+
+import matplotlib.pyplot as plt
+import numpy as np
+from sklearn.cluster import DBSCAN
+from sklearn import metrics
+from sklearn.datasets.samples_generator import make_blobs
+from sklearn.preprocessing import StandardScaler
+from sklearn import datasets
+  
+# Load data in X
+X, y_true = make_blobs(n_samples=300, centers=4,
+                       cluster_std=0.50, random_state=0)
+db = DBSCAN(eps=0.3, min_samples=10).fit(X)
+core_samples_mask = np.zeros_like(db.labels_, dtype=bool)
+core_samples_mask[db.core_sample_indices_] = True
+labels = db.labels_
+  
+# Number of clusters in labels, ignoring noise if present.
+n_clusters_ = len(set(labels)) - (1 if -1 in labels else 0)
+  
+print(labels)
+  
+# Plot result
+  
+# Black removed and is used for noise instead.
+unique_labels = set(labels)
+colors = ['y', 'b', 'g', 'r']
+print(colors)
+for k, col in zip(unique_labels, colors):
+    if k == -1:
+        # Black used for noise.
+        col = 'k'
+  
+    class_member_mask = (labels == k)
+  
+    xy = X[class_member_mask & core_samples_mask]
+    plt.plot(xy[:, 0], xy[:, 1], 'o', markerfacecolor=col,
+             markeredgecolor='k',
+             markersize=6)
+  
+    xy = X[class_member_mask & ~core_samples_mask]
+    plt.plot(xy[:, 0], xy[:, 1], 'o', markerfacecolor=col,
+             markeredgecolor='k',
+             markersize=6)
+  
+plt.title('number of clusters: %d' % n_clusters_)
+plt.show()
+  
+#evaluation metrics
+sc = metrics.silhouette_score(X, labels)
+print("Silhouette Coefficient:%0.2f"%sc)
+ari = adjusted_rand_score(y_true, labels)
+print("Adjusted Rand Index: %0.2f"%ari)
+
+Output: 
+
+Silhouette Coefficient:0.13
+Adjusted Rand Index: 0.31
+Black points represent outliers. By changing the eps and the MinPts , we can change the cluster configuration.
+Now the question should be raised is – Why should we use DBSCAN where K-Means is the widely used method in clustering analysis?
+Disadvantage Of K-MEANS:
+K-Means forms spherical clusters only. This algorithm fails when data is not spherical ( i.e. same variance in all directions). 
+ 
+
+K-Means algorithm is sensitive towards outlier. Outliers can skew the clusters in K-Means in very large extent. 
+ 
+
+K-Means algorithm requires one to specify the number of clusters a priory etc.
+Basically, DBSCAN algorithm overcomes all the above-mentioned drawbacks of K-Means algorithm. DBSCAN algorithm identifies the dense region by grouping together data points that are closed to each other based on distance measurement.
+Python implementation of the above algorithm without using the sklearn library can be found here dbscan_in_python. 
+       
+    13. Implementing DBSCAN algorithm using Sklearn
+       Implementing DBSCAN algorithm using Sklearn
+    • Difficulty Level : Hard
+    • Last Updated : 06 Jun, 2019
+    • Read
+    • Discuss
+Prerequisites: DBSCAN Algorithm
+Density Based Spatial Clustering of Applications with Noise(DBCSAN) is a clustering algorithm which was proposed in 1996. In 2014, the algorithm was awarded the ‘Test of Time’ award at the leading Data Mining conference, KDD.
+
+Dataset – Credit Card.
+Step 1: Importing the required libraries
+
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+  
+from sklearn.cluster import DBSCAN
+from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import normalize
+from sklearn.decomposition import PCA
+
+Step 2: Loading the data
+X = pd.read_csv('..input_path/CC_GENERAL.csv')
+  
+# Dropping the CUST_ID column from the data
+X = X.drop('CUST_ID', axis = 1)
+  
+# Handling the missing values
+X.fillna(method ='ffill', inplace = True)
+  
+print(X.head())
+
+
+Step 3: Preprocessing the data
+# Scaling the data to bring all the attributes to a comparable level
+scaler = StandardScaler()
+X_scaled = scaler.fit_transform(X)
+  
+# Normalizing the data so that 
+# the data approximately follows a Gaussian distribution
+X_normalized = normalize(X_scaled)
+  
+# Converting the numpy array into a pandas DataFrame
+X_normalized = pd.DataFrame(X_normalized)
+
+Step 4: Reducing the dimensionality of the data to make it visualizable
+pca = PCA(n_components = 2)
+X_principal = pca.fit_transform(X_normalized)
+X_principal = pd.DataFrame(X_principal)
+X_principal.columns = ['P1', 'P2']
+print(X_principal.head())
+
+
+Step 5: Building the clustering model
+# Numpy array of all the cluster labels assigned to each data point
+db_default = DBSCAN(eps = 0.0375, min_samples = 3).fit(X_principal)
+labels = db_default.labels_
+
+Step 6: Visualizing the clustering
+# Building the label to colour mapping
+colours = {}
+colours[0] = 'r'
+colours[1] = 'g'
+colours[2] = 'b'
+colours[-1] = 'k'
+  
+# Building the colour vector for each data point
+cvec = [colours[label] for label in labels]
+  
+# For the construction of the legend of the plot
+r = plt.scatter(X_principal['P1'], X_principal['P2'], color ='r');
+g = plt.scatter(X_principal['P1'], X_principal['P2'], color ='g');
+b = plt.scatter(X_principal['P1'], X_principal['P2'], color ='b');
+k = plt.scatter(X_principal['P1'], X_principal['P2'], color ='k');
+  
+# Plotting P1 on the X-Axis and P2 on the Y-Axis 
+# according to the colour vector defined
+plt.figure(figsize =(9, 9))
+plt.scatter(X_principal['P1'], X_principal['P2'], c = cvec)
+  
+# Building the legend
+plt.legend((r, g, b, k), ('Label 0', 'Label 1', 'Label 2', 'Label -1'))
+  
+plt.show()
+
+
+Step 7: Tuning the parameters of the model
+db = DBSCAN(eps = 0.0375, min_samples = 50).fit(X_principal)
+labels1 = db.labels_
+
+Step 8: Visualizing the changes
+colours1 = {}
+colours1[0] = 'r'
+colours1[1] = 'g'
+colours1[2] = 'b'
+colours1[3] = 'c'
+colours1[4] = 'y'
+colours1[5] = 'm'
+colours1[-1] = 'k'
+  
+cvec = [colours1[label] for label in labels]
+colors = ['r', 'g', 'b', 'c', 'y', 'm', 'k' ]
+  
+r = plt.scatter(
+        X_principal['P1'], X_principal['P2'], marker ='o', color = colors[0])
+g = plt.scatter(
+        X_principal['P1'], X_principal['P2'], marker ='o', color = colors[1])
+b = plt.scatter(
+        X_principal['P1'], X_principal['P2'], marker ='o', color = colors[2])
+c = plt.scatter(
+        X_principal['P1'], X_principal['P2'], marker ='o', color = colors[3])
+y = plt.scatter(
+        X_principal['P1'], X_principal['P2'], marker ='o', color = colors[4])
+m = plt.scatter(
+        X_principal['P1'], X_principal['P2'], marker ='o', color = colors[5])
+k = plt.scatter(
+        X_principal['P1'], X_principal['P2'], marker ='o', color = colors[6])
+  
+plt.figure(figsize =(9, 9))
+plt.scatter(X_principal['P1'], X_principal['P2'], c = cvec)
+plt.legend((r, g, b, c, y, m, k),
+           ('Label 0', 'Label 1', 'Label 2', 'Label 3 'Label 4',
+            'Label 5', 'Label -1'),
+           scatterpoints = 1,
+           loc ='upper left',
+           ncol = 3,
+           fontsize = 8)
+plt.show()
+
+
+
+       
+    14. Fuzzy Clustering
+       ML | Fuzzy Clustering
+    • Difficulty Level : Easy
+    • Last Updated : 17 Sep, 2019
+    • Read
+    • Discuss
+Prerequisite: Clustering in Machine Learning
+What is clustering?
+Clustering is an unsupervised machine learning technique which divides the given data into different clusters based on their distances (similarity) from each other.
+
+The unsupervised k-means clustering algorithm gives the values of any point lying in some particular cluster to be either as 0 or 1 i.e., either true or false. But the fuzzy logic gives the fuzzy values of any particular data point to be lying in either of the clusters. Here, in fuzzy c-means clustering, we find out the centroid of the data points and then calculate the distance of each data point from the given centroids until the clusters formed becomes constant.
+Suppose the given data points are {(1, 3), (2, 5), (6, 8), (7, 9)}
+ 
+The steps to perform algorithm are:
+
+
+Step 1: Initialize the data points into desired number of clusters randomly.
+Let’s assume there are 2 clusters in which the data is to be divided, initializing the data point randomly. Each data point lies in both the clusters with some membership value which can be assumed anything in the initial state.
+The table below represents the values of the data points along with their membership (gamma) in each of the cluster.
+Cluster    (1, 3)    (2, 5)    (4, 8)    (7, 9)
+1)          0.8        0.7       0.2       0.1
+2)          0.2        0.3       0.8       0.9
+Step 2: Find out the centroid.
+The formula for finding out the centroid (V) is:
+
+
+Where, µ is fuzzy membership value of the data point, m is the fuzziness parameter (generally taken as 2), and xk is the data point.
+Here,
+V11  = (0.82 *1 + 0.72 * 2 + 0.22 * 4 + 0.12 * 7) / ( (0.82 + 0.72  + 0.22  + 0.12 ) = 1.568
+V12  = (0.82 *3 + 0.72 * 5 + 0.22 * 8 + 0.12 * 9) / ( (0.82 + 0.72  + 0.22  + 0.12 ) = 4.051
+V11  = (0.22 *1 + 0.32 * 2 + 0.82 * 4 + 0.92 * 7) / ( (0.22 + 0.32  + 0.82  + 0.92 ) = 5.35
+V11  = (0.22 *3 + 0.32 * 5 + 0.82 * 8 + 0.92 * 9) / ( (0.22 + 0.32  + 0.82  + 0.92 ) = 8.215
+
+Centroids are: (1.568, 4.051) and (5.35, 8.215)
+Step 3: Find out the distance of each point from centroid.
+D11 = ((1 - 1.568)2 + (3 - 4.051)2)0.5 = 1.2
+D12 = ((1 - 5.35)2 + (3 - 8.215)2)0.5 = 6.79
+Similarly, the distance of all other points is computed from both the centroids.
+Step 4: Updating membership values.
+
+
+For point 1 new membership values are:
+
+ = [{ [(1.2)2 / (1.2)2] + [(1.2)2 / (6.79)2]} ^ {(1 / (2 – 1))} ] -1 = 0.96
+
+
+ = [{ [(6.79)2 / (6.79)2] + [(6.79)2 / (1.2)2]} ^ {(1 / (2 – 1))} ] -1 = 0.04
+
+Alternatively,
+
+Similarly, compute all other membership values, and update the matrix.
+Step 5: Repeat the steps(2-4) until the constant values are obtained for the membership values or the difference is less than the tolerance value (a small value up to which the difference in values of two consequent updations is accepted).
+Step 6: Defuzzify the obtained membership values.
+ 
+Implementation: The fuzzy scikit learn library has a pre-defined function for fuzzy c-means which can be used in Python. For using fuzzy c-means you need to install the skfuzzy library.
+pip install sklearn
+pip install skfuzzy
+       
+    15. Spectral Clustering
+       ML | Spectral Clustering
+    • Difficulty Level : Hard
+    • Last Updated : 19 Jul, 2019
+    • Read
+    • Discuss
+Prerequisites: K-Means Clustering
+Spectral Clustering is a growing clustering algorithm which has performed better than many traditional clustering algorithms in many cases. It treats each data point as a graph-node and thus transforms the clustering problem into a graph-partitioning problem. A typical implementation consists of three fundamental steps:-
+
+    1. Building the Similarity Graph: This step builds the Similarity Graph in the form of an adjacency matrix which is represented by A. The adjacency matrix can be built in the following manners:-
+        ? Epsilon-neighbourhood Graph: A parameter epsilon is fixed beforehand. Then, each point is connected to all the points which lie in it’s epsilon-radius. If all the distances between any two points are similar in scale then typically the weights of the edges ie the distance between the two points are not stored since they do not provide any additional information. Thus, in this case, the graph built is an undirected and unweighted graph.
+        ? K-Nearest Neighbours A parameter k is fixed beforehand. Then, for two vertices u and v, an edge is directed from u to v only if v is among the k-nearest neighbours of u. Note that this leads to the formation of a weighted and directed graph because it is not always the case that for each u having v as one of the k-nearest neighbours, it will be the same case for v having u among its k-nearest neighbours. To make this graph undirected, one of the following approaches are followed:-
+            1. Direct an edge from u to v and from v to u if either v is among the k-nearest neighbours of u OR u is among the k-nearest neighbours of v.
+            2. Direct an edge from u to v and from v to u if v is among the k-nearest neighbours of u AND u is among the k-nearest neighbours of v.
+        ? Fully-Connected Graph: To build this graph, each point is connected with an undirected edge-weighted by the distance between the two points to every other point. Since this approach is used to model the local neighbourhood relationships thus typically the Gaussian similarity metric is used to calculate the distance.
+    2. Projecting the data onto a lower Dimensional Space: This step is done to account for the possibility that members of the same cluster may be far away in the given dimensional space. Thus the dimensional space is reduced so that those points are closer in the reduced dimensional space and thus can be clustered together by a traditional clustering algorithm. It is done by computing the Graph Laplacian Matrix . To compute it though first, the degree of a node needs to be defined. The degree of the ith node is given by
+       
+       Note that  is the edge between the nodes i and j as defined in the adjacency matrix above.
+       
+       
+       The degree matrix is defined as follows:-
+       
+       Thus the Graph Laplacian Matrix is defined as:-
+       
+       This Matrix is then normalized for mathematical efficiency. To reduce the dimensions, first, the eigenvalues and the respective eigenvectors are calculated. If the number of clusters is k then the first eigenvalues and their eigen-vectors are taken and stacked into a matrix such that the eigen-vectors are the columns.
+    3. Clustering the Data: This process mainly involves clustering the reduced data by using any traditional clustering technique – typically K-Means Clustering. First, each node is assigned a row of the normalized of the Graph Laplacian Matrix. Then this data is clustered using any traditional technique. To transform the clustering result, the node identifier is retained.
+       Properties:
+        ? Assumption-Less: This clustering technique, unlike other traditional techniques do not assume the data to follow some property. Thus this makes this technique to answer a more-generic class of clustering problems.
+        ? Ease of implementation and Speed: This algorithm is easier to implement than other clustering algorithms and is also very fast as it mainly consists of mathematical computations.
+        ? Not-Scalable: Since it involves the building of matrices and computation of eigenvalues and eigenvectors it is time-consuming for dense datasets.
+The below steps demonstrate how to implement Spectral Clustering using Sklearn. The data for the following steps is the Credit Card Data which can be downloaded from Kaggle.
+Step 1: Importing the required libraries
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.cluster import SpectralClustering
+from sklearn.preprocessing import StandardScaler, normalize
+from sklearn.decomposition import PCA
+from sklearn.metrics import silhouette_score
+
+Step 2: Loading and Cleaning the Data
+# Changing the working location to the location of the data
+cd "C:\Users\Dev\Desktop\Kaggle\Credit_Card"
+  
+# Loading the data
+X = pd.read_csv('CC_GENERAL.csv')
+  
+# Dropping the CUST_ID column from the data
+X = X.drop('CUST_ID', axis = 1)
+  
+# Handling the missing values if any
+X.fillna(method ='ffill', inplace = True)
+  
+X.head()
+
+
+
+
+Step 3: Preprocessing the data to make the data visualizable
+# Preprocessing the data to make it visualizable
+  
+# Scaling the Data
+scaler = StandardScaler()
+X_scaled = scaler.fit_transform(X)
+  
+# Normalizing the Data
+X_normalized = normalize(X_scaled)
+  
+# Converting the numpy array into a pandas DataFrame
+X_normalized = pd.DataFrame(X_normalized)
+  
+# Reducing the dimensions of the data
+pca = PCA(n_components = 2)
+X_principal = pca.fit_transform(X_normalized)
+X_principal = pd.DataFrame(X_principal)
+X_principal.columns = ['P1', 'P2']
+  
+X_principal.head()
+
+
+Step 4: Building the Clustering models and Visualizing the clustering
+In the below steps, two different Spectral Clustering models with different values for the parameter ‘affinity’. You can read about the documentation of the Spectral Clustering class here.
+a) affinity = ‘rbf’
+# Building the clustering model
+spectral_model_rbf = SpectralClustering(n_clusters = 2, affinity ='rbf')
+  
+# Training the model and Storing the predicted cluster labels
+labels_rbf = spectral_model_rbf.fit_predict(X_principal)
+
+# Building the label to colour mapping
+colours = {}
+colours[0] = 'b'
+colours[1] = 'y'
+  
+# Building the colour vector for each data point
+cvec = [colours[label] for label in labels_rbf]
+  
+# Plotting the clustered scatter plot
+  
+b = plt.scatter(X_principal['P1'], X_principal['P2'], color ='b');
+y = plt.scatter(X_principal['P1'], X_principal['P2'], color ='y');
+  
+plt.figure(figsize =(9, 9))
+plt.scatter(X_principal['P1'], X_principal['P2'], c = cvec)
+plt.legend((b, y), ('Label 0', 'Label 1'))
+plt.show()
+
+
+b) affinity = ‘nearest_neighbors’
+# Building the clustering model
+spectral_model_nn = SpectralClustering(n_clusters = 2, affinity ='nearest_neighbors')
+  
+# Training the model and Storing the predicted cluster labels
+labels_nn = spectral_model_nn.fit_predict(X_principal)
+
+
+Step 5: Evaluating the performances
+# List of different values of affinity
+affinity = ['rbf', 'nearest-neighbours']
+  
+# List of Silhouette Scores
+s_scores = []
+  
+# Evaluating the performance
+s_scores.append(silhouette_score(X, labels_rbf))
+s_scores.append(silhouette_score(X, labels_nn))
+  
+print(s_scores)
+
+
+Step 6: Comparing the performances
+# Plotting a Bar Graph to compare the models
+plt.bar(affinity, s_scores)
+plt.xlabel('Affinity')
+plt.ylabel('Silhouette Score')
+plt.title('Comparison of different Clustering Models')
+plt.show()
+
+
+
+       
+    16. OPTICS Clustering
+       ML | OPTICS Clustering Explanation
+    • Difficulty Level : Hard
+    • Last Updated : 14 Jul, 2019
+    • Read
+    • Discuss
+Prerequisites: DBSCAN Clustering
+OPTICS Clustering stands for Ordering Points To Identify Cluster Structure. It draws inspiration from the DBSCAN clustering algorithm. It adds two more terms to the concepts of DBSCAN clustering. They are:-
+
+    1. Core Distance: It is the minimum value of radius required to classify a given point as a core point. If the given point is not a Core point, then it’s Core Distance is undefined.
+       
+    2. Reachability Distance: It is defined with respect to another data point q(Let). The Reachability distance between a point p and q is the maximum of the Core Distance of p and the Euclidean Distance(or some other distance metric) between p and q. Note that The Reachability Distance is not defined if q is not a Core point.
+
+
+
+This clustering technique is different from other clustering techniques in the sense that this technique does not explicitly segment the data into clusters. Instead, it produces a visualization of Reachability distances and uses this visualization to cluster the data.
+Pseudocode:
+The following Pseudocode has been referred from the Wikipedia page of the algorithm.
+OPTICS(DB, eps, MinPts)
+
+    #Repeating the process for all points in the database
+    for each point pt of DB
+
+       #Initializing the reachability distance of the selected point
+       pt.reachable_dist = UNDEFINED
+    for each unprocessed point pt of DB
+
+       #Getting the neighbours of the selected point
+       #according to the definitions of epsilon and
+       #minPts in DBSCAN
+       Nbrs = getNbrs(pt, eps)
+
+       mark pt as processed
+       output pt to the ordered list
+
+       #Checking if the selected point is not noise
+       if (core_dist(pt, eps, Minpts) != UNDEFINED)
+
+          #Initializing a priority queue to get the closest data point
+          #in terms of Reachability distance
+          Seeds = empty priority queue
+
+          #Calling the update function
+          update(Nbrs, pt, Seeds, eps, Minpts)
+
+          #Repeating the process for the next closest point
+          for each next q in Seeds
+             Nbrs' = getNbrs(q, eps)
+             mark q as processed
+             output q to the ordered list
+             if (core_dist(q, eps, Minpts) != UNDEFINED)
+                update(Nbrs', q, Seeds, eps, Minpts)
+The pseudo-code for the update function is given below:
+update(Nbrs, pt, Seeds, eps, MinPts)
+
+    #Calculating the core distance for the given point
+    coredist = core_dist(pt, eps, MinPts)
+
+    #Updating the Reachability distance for each neighbour of p
+    for each obj in Nbrs
+       if (obj is not processed)
+          new_reach_distance = max(coredist, dist(pt, obj))
+
+          #Checking if the neighbour point is in seeds
+          if (obj.reachable_dist == UNDEFINED)
+
+              #Updation step
+              obj.reachabled_dist = new_reach_distance
+              Seeds.insert(obj, new_reach_distance)
+          else               
+              if (new_reach_distance < obj.reachable_dist)
+
+                 #Updation step
+                 o.reachable_dist = new_reach_distance
+                 Seeds.move-up(obj, new_reach_distance)
+OPTICS Clustering v/s DBSCAN Clustering:
+    1. Memory Cost : The OPTICS clustering technique requires more memory as it maintains a priority queue (Min Heap) to determine the next data point which is closest to the point currently being processed in terms of Reachability Distance. It also requires more computational power because the nearest neighbour queries are more complicated than radius queries in DBSCAN.
+    2. Fewer Parameters : The OPTICS clustering technique does not need to maintain the epsilon parameter and is only given in the above pseudo-code to reduce the time taken. This leads to the reduction of the analytical process of parameter tuning.
+    3. This technique does not segregate the given data into clusters. It merely produces a Reachability distance plot and it is upon the interpretation of the programmer to cluster the points accordingly.
+       
+    17. OPTICS Clustering Implementing using Sklearn
+       ML | OPTICS Clustering Implementing using Sklearn
+    • Last Updated : 14 Jul, 2019
+    • Read
+    • Discuss
+Prerequisites: OPTICS Clustering
+This article will demonstrate how to implement OPTICS Clustering technique using Sklearn in Python. The dataset used for the demonstration is the Mall Customer Segmentation Data which can be downloaded from Kaggle.
+
+Step 1: Importing the required libraries
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from matplotlib import gridspec
+from sklearn.cluster import OPTICS, cluster_optics_dbscan
+from sklearn.preprocessing import normalize, StandardScaler
+
+Step 2: Loading the Data
+
+
+# Changing the working location to the location of the data
+cd C:\Users\Dev\Desktop\Kaggle\Customer Segmentation
+  
+X = pd.read_csv('Mall_Customers.csv')
+  
+# Dropping irrelevant columns
+drop_features = ['CustomerID', 'Gender']
+X = X.drop(drop_features, axis = 1)
+  
+# Handling the missing values if any
+X.fillna(method ='ffill', inplace = True)
+  
+X.head()
+
+
+Step 3: Preprocessing the Data
+# Scaling the data to bring all the attributes to a comparable level
+scaler = StandardScaler()
+X_scaled = scaler.fit_transform(X)
+  
+# Normalizing the data so that the data
+# approximately follows a Gaussian distribution
+X_normalized = normalize(X_scaled)
+  
+# Converting the numpy array into a pandas DataFrame
+X_normalized = pd.DataFrame(X_normalized)
+  
+# Renaming the columns
+X_normalized.columns = X.columns
+  
+X_normalized.head()
+
+
+Step 4: Building the Clustering Model
+# Building the OPTICS Clustering model
+optics_model = OPTICS(min_samples = 10, xi = 0.05, min_cluster_size = 0.05)
+  
+# Training the model
+optics_model.fit(X_normalized)
+
+Step 5: Storing the results of the training
+# Producing the labels according to the DBSCAN technique with eps = 0.5
+labels1 = cluster_optics_dbscan(reachability = optics_model.reachability_,
+                                   core_distances = optics_model.core_distances_,
+                                   ordering = optics_model.ordering_, eps = 0.5)
+  
+# Producing the labels according to the DBSCAN technique with eps = 2.0
+labels2 = cluster_optics_dbscan(reachability = optics_model.reachability_,
+                                   core_distances = optics_model.core_distances_,
+                                   ordering = optics_model.ordering_, eps = 2)
+  
+# Creating a numpy array with numbers at equal spaces till
+# the specified range
+space = np.arange(len(X_normalized))
+  
+# Storing the reachability distance of each point
+reachability = optics_model.reachability_[optics_model.ordering_]
+  
+# Storing the cluster labels of each point
+labels = optics_model.labels_[optics_model.ordering_]
+  
+print(labels)
+
+
+Step 6: Visualizing the results
+# Defining the framework of the visualization
+plt.figure(figsize =(10, 7))
+G = gridspec.GridSpec(2, 3)
+ax1 = plt.subplot(G[0, :])
+ax2 = plt.subplot(G[1, 0])
+ax3 = plt.subplot(G[1, 1])
+ax4 = plt.subplot(G[1, 2])
+  
+# Plotting the Reachability-Distance Plot
+colors = ['c.', 'b.', 'r.', 'y.', 'g.']
+for Class, colour in zip(range(0, 5), colors):
+    Xk = space[labels == Class]
+    Rk = reachability[labels == Class]
+    ax1.plot(Xk, Rk, colour, alpha = 0.3)
+ax1.plot(space[labels == -1], reachability[labels == -1], 'k.', alpha = 0.3)
+ax1.plot(space, np.full_like(space, 2., dtype = float), 'k-', alpha = 0.5)
+ax1.plot(space, np.full_like(space, 0.5, dtype = float), 'k-.', alpha = 0.5)
+ax1.set_ylabel('Reachability Distance')
+ax1.set_title('Reachability Plot')
+  
+# Plotting the OPTICS Clustering
+colors = ['c.', 'b.', 'r.', 'y.', 'g.']
+for Class, colour in zip(range(0, 5), colors):
+    Xk = X_normalized[optics_model.labels_ == Class]
+    ax2.plot(Xk.iloc[:, 0], Xk.iloc[:, 1], colour, alpha = 0.3)
+      
+ax2.plot(X_normalized.iloc[optics_model.labels_ == -1, 0],
+        X_normalized.iloc[optics_model.labels_ == -1, 1],
+       'k+', alpha = 0.1)
+ax2.set_title('OPTICS Clustering')
+  
+# Plotting the DBSCAN Clustering with eps = 0.5
+colors = ['c', 'b', 'r', 'y', 'g', 'greenyellow']
+for Class, colour in zip(range(0, 6), colors):
+    Xk = X_normalized[labels1 == Class]
+    ax3.plot(Xk.iloc[:, 0], Xk.iloc[:, 1], colour, alpha = 0.3, marker ='.')
+        
+ax3.plot(X_normalized.iloc[labels1 == -1, 0],
+        X_normalized.iloc[labels1 == -1, 1],
+       'k+', alpha = 0.1)
+ax3.set_title('DBSCAN clustering with eps = 0.5')
+  
+# Plotting the DBSCAN Clustering with eps = 2.0
+colors = ['c.', 'y.', 'm.', 'g.']
+for Class, colour in zip(range(0, 4), colors):
+    Xk = X_normalized.iloc[labels2 == Class]
+    ax4.plot(Xk.iloc[:, 0], Xk.iloc[:, 1], colour, alpha = 0.3)
+          
+ax4.plot(X_normalized.iloc[labels2 == -1, 0],
+        X_normalized.iloc[labels2 == -1, 1],
+       'k+', alpha = 0.1)
+ax4.set_title('DBSCAN Clustering with eps = 2.0')
+  
+  
+plt.tight_layout()
+plt.show()
+
+
+
+       
+    18. Hierarchical clustering (Agglomerative and Divisive clustering)
+       ML | Hierarchical clustering (Agglomerative and Divisive clustering)
+    • Difficulty Level : Hard
+    • Last Updated : 19 Sep, 2022
+    • Read
+    • Discuss
+In data mining and statistics, hierarchical clustering analysis is a method of cluster analysis that seeks to build a hierarchy of clusters i.e. tree-type structure based on the hierarchy. 
+Basically, there are two types of hierarchical cluster analysis strategies –
+
+1. Agglomerative Clustering: Also known as bottom-up approach or hierarchical agglomerative clustering (HAC). A structure that is more informative than the unstructured set of clusters returned by flat clustering. This clustering algorithm does not require us to prespecify the number of clusters. Bottom-up algorithms treat each data as a singleton cluster at the outset and then successively agglomerates pairs of clusters until all clusters have been merged into a single cluster that contains all data. 
+Algorithm : 
+
+
+given a dataset (d1, d2, d3, ....dN) of size N
+# compute the distance matrix
+for i=1 to N:
+   # as the distance matrix is symmetric about 
+   # the primary diagonal so we compute only lower 
+   # part of the primary diagonal 
+   for j=1 to i:
+      dis_mat[i][j] = distance[di, dj] 
+each data point is a singleton cluster
+repeat
+   merge the two cluster having minimum distance
+   update the distance matrix
+until only a single cluster remains
+
+Python implementation of the above algorithm using the scikit-learn library: 
+
+from sklearn.cluster import AgglomerativeClustering
+import numpy as np
+ 
+# randomly chosen dataset
+X = np.array([[1, 2], [1, 4], [1, 0],
+              [4, 2], [4, 4], [4, 0]])
+ 
+# here we need to mention the number of clusters
+# otherwise the result will be a single cluster
+# containing all the data
+clustering = AgglomerativeClustering(n_clusters = 2).fit(X)
+ 
+# print the class labels
+print(clustering.labels_)
+
+Output : 
+[1, 1, 1, 0, 0, 0]
+Computing Distance Matrix: While merging two clusters we check the distance between two every pair of clusters and merge the pair with least distance/most similarity. But the question is how is that distance determined. There are different ways of defining Inter Cluster distance/similarity. Some of them are:
+1. Min Distance: Find minimum distance between any two points of the cluster.
+2. Max Distance: Find maximum distance between any two points of the cluster.
+3. Group Average: Find average of distance between every two points of the clusters.
+4. Ward’s Method: Similarity of two clusters is based on the increase in squared error when two clusters are merged.
+
+
+For example, if we group a given data using different method, we may get different results:
+
+ 
+2. Divisive clustering: Also known as a top-down approach. This algorithm also does not require to prespecify the number of clusters. Top-down clustering requires a method for splitting a cluster that contains the whole data and proceeds by splitting clusters recursively until individual data have been split into singleton clusters.
+Algorithm : 
+given a dataset (d1, d2, d3, ....dN) of size N
+at the top we have all data in one cluster
+the cluster is split using a flat clustering method eg. K-Means etc
+repeat
+choose the best cluster among all the clusters to split
+split that cluster by the flat clustering algorithm
+until each data is in its own singleton cluster
+
+Hierarchical Agglomerative vs Divisive clustering – 
+    • Divisive clustering is more complex as compared to agglomerative clustering, as in the case of divisive clustering we need a flat clustering method as “subroutine” to split each cluster until we have each data having its own singleton cluster.
+    • Divisive clustering is more efficient if we do not generate a complete hierarchy all the way down to individual data leaves. The time complexity of a naive agglomerative clustering is O(n3) because we exhaustively scan the N x N matrix dist_mat for the lowest distance in each of N-1 iterations. Using priority queue data structure we can reduce this complexity to O(n2logn). By using some more optimizations it can be brought down to O(n2). Whereas for divisive clustering given a fixed number of top levels, using an efficient flat algorithm like K-Means, divisive algorithms are linear in the number of patterns and clusters.
+    • A divisive algorithm is also more accurate. Agglomerative clustering makes decisions by considering the local patterns or neighbor points without initially taking into account the global distribution of data. These early decisions cannot be undone. whereas divisive clustering takes into consideration the global distribution of data when making top-level partitioning decisions.
+       
+    19. Implementing Agglomerative Clustering using Sklearn
+       Implementing Agglomerative Clustering using Sklearn
+    • Difficulty Level : Medium
+    • Last Updated : 21 Jun, 2022
+    • Read
+    • Discuss
+Prerequisites: Agglomerative Clustering Agglomerative Clustering is one of the most common hierarchical clustering techniques. Dataset – Credit Card Dataset. Assumption: The clustering technique assumes that each data point is similar enough to the other data points that the data at the starting can be assumed to be clustered in 1 cluster. Step 1: Importing the required libraries 
+
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.decomposition import PCA
+from sklearn.cluster import AgglomerativeClustering
+from sklearn.preprocessing import StandardScaler, normalize
+from sklearn.metrics import silhouette_score
+import scipy.cluster.hierarchy as shc
+
+Step 2: Loading and Cleaning the data 
+
+
+
+# Changing the working location to the location of the file
+cd C:\Users\Dev\Desktop\Kaggle\Credit_Card
+ 
+X = pd.read_csv('CC_GENERAL.csv')
+ 
+# Dropping the CUST_ID column from the data
+X = X.drop('CUST_ID', axis = 1)
+ 
+# Handling the missing values
+X.fillna(method ='ffill', inplace = True)
+
+Step 3: Preprocessing the data 
+
+# Scaling the data so that all the features become comparable
+scaler = StandardScaler()
+X_scaled = scaler.fit_transform(X)
+ 
+# Normalizing the data so that the data approximately
+# follows a Gaussian distribution
+X_normalized = normalize(X_scaled)
+ 
+# Converting the numpy array into a pandas DataFrame
+X_normalized = pd.DataFrame(X_normalized)
+
+Step 4: Reducing the dimensionality of the Data 
+
+pca = PCA(n_components = 2)
+X_principal = pca.fit_transform(X_normalized)
+X_principal = pd.DataFrame(X_principal)
+X_principal.columns = ['P1', 'P2']
+
+Dendrograms are used to divide a given cluster into many different clusters. Step 5: Visualizing the working of the Dendrograms 
+
+plt.figure(figsize =(8, 8))
+plt.title('Visualising the data')
+Dendrogram = shc.dendrogram((shc.linkage(X_principal, method ='ward')))
+
+ To determine the optimal number of clusters by visualizing the data, imagine all the horizontal lines as being completely horizontal and then after calculating the maximum distance between any two horizontal lines, draw a horizontal line in the maximum distance calculated.  The above image shows that the optimal number of clusters should be 2 for the given data. Step 6: Building and Visualizing the different clustering models for different values of k a) k = 2 
+
+ac2 = AgglomerativeClustering(n_clusters = 2)
+ 
+# Visualizing the clustering
+plt.figure(figsize =(6, 6))
+plt.scatter(X_principal['P1'], X_principal['P2'],
+           c = ac2.fit_predict(X_principal), cmap ='rainbow')
+plt.show()
+
+ b) k = 3 
+
+
+
+ac3 = AgglomerativeClustering(n_clusters = 3)
+ 
+plt.figure(figsize =(6, 6))
+plt.scatter(X_principal['P1'], X_principal['P2'],
+           c = ac3.fit_predict(X_principal), cmap ='rainbow')
+plt.show()
+
+ c) k = 4 
+
+ac4 = AgglomerativeClustering(n_clusters = 4)
+ 
+plt.figure(figsize =(6, 6))
+plt.scatter(X_principal['P1'], X_principal['P2'],
+            c = ac4.fit_predict(X_principal), cmap ='rainbow')
+plt.show()
+
+ d) k = 5 
+
+ac5 = AgglomerativeClustering(n_clusters = 5)
+ 
+plt.figure(figsize =(6, 6))
+plt.scatter(X_principal['P1'], X_principal['P2'],
+            c = ac5.fit_predict(X_principal), cmap ='rainbow')
+plt.show()
+
+ e) k = 6 
+
+ac6 = AgglomerativeClustering(n_clusters = 6)
+ 
+plt.figure(figsize =(6, 6))
+plt.scatter(X_principal['P1'], X_principal['P2'],
+            c = ac6.fit_predict(X_principal), cmap ='rainbow')
+plt.show()
+
+ We now determine the optimal number of clusters using a mathematical technique. Here, We will use the Silhouette Scores for the purpose. Step 7: Evaluating the different models and Visualizing the results. 
+
+k = [2, 3, 4, 5, 6]
+ 
+# Appending the silhouette scores of the different models to the list
+silhouette_scores = []
+silhouette_scores.append(
+        silhouette_score(X_principal, ac2.fit_predict(X_principal)))
+silhouette_scores.append(
+        silhouette_score(X_principal, ac3.fit_predict(X_principal)))
+silhouette_scores.append(
+        silhouette_score(X_principal, ac4.fit_predict(X_principal)))
+silhouette_scores.append(
+        silhouette_score(X_principal, ac5.fit_predict(X_principal)))
+silhouette_scores.append(
+        silhouette_score(X_principal, ac6.fit_predict(X_principal)))
+ 
+# Plotting a bar graph to compare the results
+plt.bar(k, silhouette_scores)
+plt.xlabel('Number of clusters', fontsize = 20)
+plt.ylabel('S(i)', fontsize = 20)
+plt.show()
+
+ Thus, with the help of the silhouette scores, it is concluded that the optimal number of clusters for the given data and clustering technique is 2.
+
+       
+    20. Gaussian Mixture Model
+Gaussian Mixture Model
+    • Difficulty Level : Hard
+    • Last Updated : 31 Jul, 2022
+    • Read
+    • Discuss
+Suppose there are set of data points that need to be grouped into several parts or clusters based on their similarity. In machine learning, this is known as Clustering.
+There are several methods available for clustering: 
+ 
+    • K Means Clustering
+    • Hierarchical Clustering
+    • Gaussian Mixture Models
+In this article, Gaussian Mixture Model will be discussed.
+ 
+
+Normal or Gaussian Distribution
+In real life, many datasets can be modeled by Gaussian Distribution (Univariate or Multivariate). So it is quite natural and intuitive to assume that the clusters come from different Gaussian Distributions. Or in other words, it is tried to model the dataset as a mixture of several Gaussian Distributions. This is the core idea of this model.
+In one dimension the probability density function of a Gaussian Distribution is given by
+ 
+
+where and are respectively mean and variance of the distribution.
+For Multivariate ( let us say d-variate) Gaussian Distribution, the probability density function is given by 
+ 
+
+
+
+Here is a d dimensional vector denoting the mean of the distribution and is the d X d covariance matrix.
+ 
+Gaussian Mixture Model
+Suppose there are K clusters (For the sake of simplicity here it is assumed that the number of clusters is known and it is K). So and is also estimated for each k. Had it been only one distribution, they would have been estimated by the maximum-likelihood method. But since there are K such clusters and the probability density is defined as a linear function of densities of all these K distributions, i.e.
+ 
+
+where is the mixing coefficient for k-th distribution.
+For estimating the parameters by the maximum log-likelihood method, compute p(X|, , ).
+ 
+
+Now define a random variable such that =p(k|X).
+From Bayes’theorem, 
+ 
+
+Now for the log-likelihood function to be maximum, its derivative of with respect to , and should be zero. So equating the derivative of with respect to to zero and rearranging the terms, 
+ 
+
+
+
+Similarly taking derivative with respect to and pi respectively, one can obtain the following expressions.
+ 
+
+And 
+
+Note: denotes the total number of sample points in the k-th cluster. Here it is assumed that there is a total N number of samples and each sample containing d features is denoted by .
+So it can be clearly seen that the parameters cannot be estimated in closed form. This is where the Expectation-Maximization algorithm is beneficial.
+ 
+Expectation-Maximization (EM) Algorithm
+The Expectation-Maximization (EM) algorithm is an iterative way to find maximum-likelihood estimates for model parameters when the data is incomplete or has some missing data points or has some hidden variables. EM chooses some random values for the missing data points and estimates a new set of data. These new values are then recursively used to estimate a better first date, by filling up missing points, until the values get fixed. 
+These are the two basic steps of the EM algorithm, namely E Step or Expectation Step or Estimation Step and M Step or Maximization Step.
+ 
+    • Estimation step: 
+        ? initialize , and by some random values, or by K means clustering results or by hierarchical clustering results.
+        ? Then for those given parameter values, estimate the value of the latent variables (i.e )
+    • Maximization Step: 
+        ? Update the value of the parameters( i.e. , and) calculated using ML method.
+Algorithm: 
+ 
+    • Initialize the mean [Tex],  [/Tex]
+[Tex]\Sigma_k  [/Tex]
+[Tex]\pi_k  [/Tex]
+
+    • Compute the[Tex]values for all k.[/Tex]
+    • 
+[Tex]\gamma_k  [/Tex]
+    • Compute log-likelihood function.
+    • Put some convergence criterion
+    • If the log-likelihood value converges to some value ( or if all the parameters converge to some values ) then stop, else return to Step 2.
+*** QuickLaTeX cannot compile formula:
+ 
+
+*** Error message:
+Error: Nothing to show, formula is empty
+Example: In this example, IRIS Dataset is taken. In Python, there is a GaussianMixture class to implement GMM.
+ 
+Note: This code might not run in an online compiler. Please use an offline ide.
+ 
+    • Load the iris dataset from the datasets package. To keep things simple, take the only first two columns (i.e sepal length and sepal width respectively).
+    • Now plot the dataset.
+ 
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from pandas import DataFrame
+from sklearn import datasets
+from sklearn.mixture import GaussianMixture
+ 
+# load the iris dataset
+iris = datasets.load_iris()
+ 
+# select first two columns
+X = iris.data[:, :2]
+ 
+# turn it into a dataframe
+d = pd.DataFrame(X)
+ 
+# plot the data
+plt.scatter(d[0], d[1])
+
+ 
+
+
+    • Now fit the data as a mixture of 3 Gaussians.
+    • Then do the clustering, i.e assign a label to each observation. Also, find the number of iterations needed for the log-likelihood function to converge and the converged log-likelihood value.
+
+gmm = GaussianMixture(n_components = 3)
+ 
+# Fit the GMM model for the dataset
+# which expresses the dataset as a
+# mixture of 3 Gaussian Distribution
+gmm.fit(d)
+ 
+# Assign a label to each sample
+labels = gmm.predict(d)
+d['labels']= labels
+d0 = d[d['labels']== 0]
+d1 = d[d['labels']== 1]
+d2 = d[d['labels']== 2]
+ 
+# plot three clusters in same plot
+plt.scatter(d0[0], d0[1], c ='r')
+plt.scatter(d1[0], d1[1], c ='yellow')
+plt.scatter(d2[0], d2[1], c ='g')
+
+
+    • Print the converged log-likelihood value and no. of iterations needed for the model to converge
+
+# print the converged log-likelihood value
+print(gmm.lower_bound_)
+ 
+# print the number of iterations needed
+# for the log-likelihood value to converge
+print(gmm.n_iter_)</div>
+
+ 
+
+    • Hence, it needed 7 iterations for the log-likelihood to converge. If more iterations are performed, no appreciable change in the log-likelihood value can be observed.
+
